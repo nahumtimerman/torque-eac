@@ -3,7 +3,7 @@ spec_version: 2
 environment:
   environment_name: eac-simple-env-3
   description: eac env for testing  1
-  owner_email: yakir.l@quali.com
+  owner_email: segev.c@quali.com
   state: active 
 
  
