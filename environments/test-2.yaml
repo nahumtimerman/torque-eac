@@ -1,8 +1,8 @@
 spec_version: 2
 
 environment:
-  environment_name: eac-simple-env-3
-  description: eac env for testing  1
+  environment_name: danny-computer-king
+  description: the one and only
   owner_email: guy.s@quali.com
   state: active 
 
@@ -15,7 +15,7 @@ inputs:
   tf_input:
     type: string
     default: "default_input_2"
-    sensitive: true
+    sensitive: false
 
 outputs:
   tf_output: 
@@ -25,7 +25,6 @@ outputs:
 grains:
   tf1:
     kind: terraform
-    # tf-version: 1.3.5
     spec:
       source:        
         path: terraform/simple-tf-module
@@ -40,7 +39,6 @@ grains:
         - output2
   tf2:
     kind: terraform
-    # tf-version: 1.3.5
     spec:
       source:        
         path: terraform/simple-tf-module
