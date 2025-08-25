@@ -1,11 +1,11 @@
 output output1 {
-  value = local.key1
+  value = "bla"
 }
 
 output output2 {
-  value = var.test_input1
+  value = "bla-bla"
 }
 
 output test_input2 {
-  value = var.test_input2
+  value = "bla-bla-bla"
 }
