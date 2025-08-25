@@ -30,6 +30,7 @@ grains:
       source:        
         path: terraform/simple-tf-module
         store: torque-eac
+        commit: ee302bc15bd4d8046626a4f980ba4bbfdc710821
       agent:
         name: '{{.inputs.compute_service_name}}'        
       inputs:
