@@ -10,7 +10,7 @@ environment:
 inputs:
   compute_service_name:
     type: agent
-    default: vido-review3
+    default: Quali
     
   tf_input:
     type: string
