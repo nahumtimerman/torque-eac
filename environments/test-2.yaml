@@ -6,8 +6,8 @@ environment:
   owner_email: guy.s@quali.com
   state: active 
 
-tags:
-  ttttttt: "super-bla"
+labels:
+- ttttttt: "super-bla"
  
 inputs:
   compute_service_name:
