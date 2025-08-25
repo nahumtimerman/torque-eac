@@ -4,7 +4,7 @@ environment:
   environment_name: danny-computer-king
   description: the one and only
   owner_email: guy.s@quali.com
-  state: inactive 
+  state: active 
 
 labels:
 - ttttttt: "super-bla"
