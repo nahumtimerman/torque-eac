@@ -1,39 +1,13 @@
-terraform {
-  required_version = ">= 0.13"
-//  backend "local" {
-//    path    = "mybackend/terraform.tfstate"
-//  }
+# This resource will destroy (at least) 30 seconds after null_resource.next
+resource "null_resource" "previous" {}
+
+resource "time_sleep" "wait_30_seconds" {
+  depends_on = [null_resource.previous]
+
+  destroy_duration = "30s"
 }
 
-
-resource "time_static" "example" {}
-
-resource "null_resource" "task_log" {
-  provisioner "local-exec" {
-    command = "echo task_log. variables: rabbit_endpoint=bla."
-  }
-}
-
-# resource "null_resource" "task_long" {
-#   provisioner "local-exec" {
-#     command = "for i in {1..3}; do echo waiting; sleep 2; done"
-#   }
-# }
-
-# resource "null_resource" "set_initial_state" {
-#   provisioner "local-exec" {
-#     interpreter = ["bash", "-c"]
-#     command = "echo \"0\" > counter"
-#   }
-# }
-
-# resource "null_resource" "wait" {
-#   provisioner "local-exec" {
-#     interpreter = ["bash", "-c"]
-#     command = "while [[ $(cat counter) != \"10\" ]]; do sleep 5; done; sleep 3;"
-#   }
-# }
-
-locals {
-  key1 = "somekey"
+# This resource will create (potentially immediately) after null_resource.previous
+resource "null_resource" "next" {
+  depends_on = [time_sleep.wait_30_seconds]
 }
