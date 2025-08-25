@@ -10,7 +10,7 @@ environment:
 inputs:
   compute_service_name:
     type: agent
-    default: Quali
+    default: eks
     
   tf_input:
     type: string
