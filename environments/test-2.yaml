@@ -6,9 +6,9 @@ environment:
   owner_email: guy.s@quali.com
   state: active 
   tags:
-  - ttttttt: "super-blastoid"
+    ttttttt: "super-blastoid"
   labels:
-  - bla
+    bla: "lalal"
  
 inputs:
   compute_service_name:
