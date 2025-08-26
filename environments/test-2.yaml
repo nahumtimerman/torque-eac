@@ -7,7 +7,7 @@ environment:
   state: active 
 
 labels:
-- ttttttt: "super-bla"
+- ttttttt: "super-blastoid"
  
 inputs:
   compute_service_name:
