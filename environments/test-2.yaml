@@ -5,9 +5,8 @@ environment:
   description: the one and only
   owner_email: guy.s@quali.com
   state: active 
-
-labels:
-- ttttttt: "super-blastoid"
+  tags:
+  - ttttttt: "super-blastoid"
  
 inputs:
   compute_service_name:
