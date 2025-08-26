@@ -7,6 +7,8 @@ environment:
   state: active 
   tags:
   - ttttttt: "super-blastoid"
+  labels:
+  - bla
  
 inputs:
   compute_service_name:
