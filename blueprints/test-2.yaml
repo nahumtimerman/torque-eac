@@ -3,7 +3,7 @@ spec_version: 2
 inputs:
   compute_service_name:
     type: agent
-    default: vido-review3
+    default: eks
     
   tf_input:
     type: string
