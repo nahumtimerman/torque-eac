@@ -10,10 +10,6 @@ inputs:
     default: "default_input_2"
     sensitive: true
 
-outputs:
-  tf_output: 
-    value: '{{.grains.tf1.outputs.output2}}'
-  
 
 grains:
 
