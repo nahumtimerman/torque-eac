@@ -16,20 +16,7 @@ outputs:
   
 
 grains:
-  tf1:
-    kind: terraform
-    spec:
-      source:        
-        path: terraform/buggy
-        store: torque-eac
-        commit: ee302bc15bd4d8046626a4f980ba4bbfdc710821
-      agent:
-        name: '{{.inputs.compute_service_name}}'        
-      inputs:
-        - test_input1: '{{.inputs.tf_input}}'
-        - test_input2: "input2"        
-      outputs:
-        - output2
+
   tf2:
     kind: terraform
     spec:
